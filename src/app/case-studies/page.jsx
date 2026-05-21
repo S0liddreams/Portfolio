@@ -21,7 +21,7 @@ const CaseStudies = () => {
         <div className="max-w-[1440px] mx-auto px-[20px] lg:px-[72px]">
           {/* Section Header */}
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-6">
+            <h2 className="text-4xl md:text-5xl text-white font-black mb-6">
               Proven <span className="text-[#f59211]">Results.</span>
             </h2>
             <p className="text-gray-400 max-w-xl">

@@ -118,11 +118,12 @@ export default function Home() {
       {/* --- ABOUT --- */}
       <div id="about" className="py-20 px-4 md:px-20 scroll-mt-20">
         <div className="flex flex-wrap justify-between gap-10">
-          <div className="basis-full md:basis-[35%]">
-            <img
+          <div className="basis-full relative md:basis-[35%]">
+            <Image
               src="/profileimage2.png"
               alt="Profile"
-              className="w-full rounded-2xl"
+              fill
+              className="w-full absolute object-cover rounded-2xl"
             />
           </div>
           <div className="basis-full md:basis-[60%]">
