@@ -120,7 +120,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-between gap-10">
           <div className="basis-full relative md:basis-[35%] h-[400px] md:h-[500px]">
             <Image
-              src="/profileimage2.png"
+              src="/medfinder.png"
               alt="Profile"
               fill
               className="object-cover rounded-2xl" // remove 'absolute' — fill handles that
