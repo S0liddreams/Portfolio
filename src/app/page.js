@@ -120,7 +120,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-between gap-10">
           <div className="basis-full md:basis-[35%]">
             <img
-              src="/profileimage2.jpeg"
+              src="/profileimage2.png"
               alt="Profile"
               className="w-full rounded-2xl"
             />
