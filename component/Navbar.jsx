@@ -35,8 +35,8 @@ const Navbar = () => {
           <Link href="/">
             <Image
               src="/slogo.png"
-              alt="Logo"
-              width={40}
+              alt="Soliddreamsdev"
+              width={60}
               height={40}
               className="rounded-lg"
             />
