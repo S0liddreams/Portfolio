@@ -111,7 +111,7 @@ export default function Home() {
 
         {/* Animated Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-[2px] h-12 bg-gradient-to-b from-[#deb887] to-transparent"></div>
+          <div className="w-[2px] h-30 bg-gradient-to-b from-[#deb887] to-transparent"></div>
         </div>
       </section>
 
@@ -245,16 +245,22 @@ export default function Home() {
                 {service.title}
               </h2>
 
-              <p className="text-sm font-light mb-6 group-hover:text-gray-800 transition-colors">
-                {service.desc}
-              </p>
+              <div className="flex flex-col gap-6">
+                <div className="h-[50px]">
+                  <p className="text-sm font-light mb-6 group-hover:text-gray-800 transition-colors">
+                    {service.desc}
+                  </p>
+                </div>
 
-              <a
-                href={service.link}
-                className="text-[#f59211] text-xs font-bold group-hover:text-black uppercase tracking-widest transition-colors"
-              >
-                Learn More
-              </a>
+                <div className="h-[50px]">
+                  <a
+                    href={service.link}
+                    className="text-[#f59211] text-xs font-bold group-hover:text-black uppercase tracking-widest transition-colors"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -287,7 +293,7 @@ export default function Home() {
             <div key={i} className="rounded-xl relative overflow-hidden group">
               <img
                 src={`/${work.img}`}
-                className="w-full rounded-xl group-hover:scale-110 transition-transform duration-500"
+                className="w-full rounded-xl h-full group-hover:scale-110 transition-transform duration-500"
               />
               <a
                 href={work.link}
