@@ -118,12 +118,12 @@ export default function Home() {
       {/* --- ABOUT --- */}
       <div id="about" className="py-20 px-4 md:px-20 scroll-mt-20">
         <div className="flex flex-wrap justify-between gap-10">
-          <div className="basis-full relative md:basis-[35%]">
+          <div className="basis-full relative md:basis-[35%] h-[400px] md:h-[500px]">
             <Image
               src="/profileimage2.png"
               alt="Profile"
               fill
-              className="w-full absolute object-cover rounded-2xl"
+              className="object-cover rounded-2xl" // remove 'absolute' — fill handles that
             />
           </div>
           <div className="basis-full md:basis-[60%]">
