@@ -300,12 +300,10 @@ export default function Home() {
               />
               <a
                 href={work.link}
-                className="absolute bottom-0 left-0 right-0 h-[50px] lg:inset-0 lg:h-0 lg:group-hover:h-full bg-gradient-to-t from-[#f59211] to-black/60 flex flex-col items-center justify-center px-10 text-center transition-all duration-500 overflow-hidden"
+                className="absolute bottom-0 left-0 right-0 h-[50px] flex flex-row lg:flex-col items-center justify-between lg:inset-0 lg:h-0 lg:group-hover:h-full bg-gradient-to-t from-[#f59211] to-black/60 lg:justify-center px-10 text-center transition-all duration-500 overflow-hidden"
               >
                 {/* Hide text on mobile to fit the 50px height, show on md: (desktop) */}
-                <h3 className="font-medium mb-4 hidden lg:block">
-                  {work.title}
-                </h3>
+                <h3 className="font-medium lg:mb-4  lg:block">{work.title}</h3>
                 <p className="text-sm hidden lg:block">{work.desc}</p>
 
                 {/* The arrow icon: smaller on mobile, larger on desktop */}
