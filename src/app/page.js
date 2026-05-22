@@ -118,7 +118,7 @@ export default function Home() {
       {/* --- ABOUT --- */}
       <div id="about" className="py-20 px-4 md:px-20 scroll-mt-20">
         <div className="flex flex-wrap justify-between gap-10">
-          <div className="basis-full relative md:basis-[35%] h-[400px] md:h-[500px]">
+          <div className="basis-full relative lg:basis-[35%] h-[400px] md:h-[500px]">
             <Image
               src="/Profile-Image.jpeg"
               alt="Profile"
@@ -126,7 +126,7 @@ export default function Home() {
               className="object-cover rounded-2xl" // remove 'absolute' — fill handles that
             />
           </div>
-          <div className="basis-full md:basis-[60%]">
+          <div className="basis-full lg:basis-[60%]">
             <h1 className="text-4xl md:text-6xl font-semibold mb-6">
               About Me
             </h1>
@@ -268,9 +268,9 @@ export default function Home() {
       </div>
 
       {/* --- PORTFOLIO --- */}
-      <div id="portfolio" className="py-24 px-8 md:px-16 scroll-mt-20">
+      <div id="portfolio" className="py-24 px-8 lg:px-16 scroll-mt-20">
         <h1 className="text-4xl font-semibold mb-10">My Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {[
             {
               img: "img22.png",
@@ -298,11 +298,16 @@ export default function Home() {
               />
               <a
                 href={work.link}
-                className="absolute inset-0 h-0 group-hover:h-full bg-gradient-to-t from-[#f59211] to-black/60 flex flex-col items-center justify-center px-10 text-center transition-all duration-500 overflow-hidden"
+                className="absolute bottom-0 left-0 right-0 h-[50px] lg:inset-0 lg:h-0 lg:group-hover:h-full bg-gradient-to-t from-[#f59211] to-black/60 flex flex-col items-center justify-center px-10 text-center transition-all duration-500 overflow-hidden"
               >
-                <h3 className="font-medium mb-4">{work.title}</h3>
-                <p className="text-sm">{work.desc}</p>
-                <span className="mt-4 bg-white text-red-600 w-12 h-12 rounded-full flex items-center justify-center text-xl">
+                {/* Hide text on mobile to fit the 50px height, show on md: (desktop) */}
+                <h3 className="font-medium mb-4 hidden lg:block">
+                  {work.title}
+                </h3>
+                <p className="text-sm hidden lg:block">{work.desc}</p>
+
+                {/* The arrow icon: smaller on mobile, larger on desktop */}
+                <span className="lg:mt-4 bg-white text-red-600 w-8 h-8 lg:w-12 lg:h-12 rounded-full flex items-center justify-center text-lg lg:text-xl">
                   <i className="fas fa-arrow-up-right-from-square"></i>
                 </span>
               </a>
