@@ -226,7 +226,7 @@ export default function Home() {
       {/* --- SERVICES --- */}
       <div
         id="services"
-        className="py-12 px-8 md:px-16 scroll-mt-20 bg-[#1a1a1a] text-white"
+        className="py-12 px-4 md:px-16 scroll-mt-20 bg-[#1a1a1a] text-white"
       >
         <h1 className="text-4xl font-semibold mb-10">Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -235,25 +235,27 @@ export default function Home() {
               key={i}
               className="bg-[#262626] p-10 rounded-xl hover:bg-[#deb887] hover:-translate-y-2 transition-all duration-500 group"
             >
-              {/* Render the icon component and ensure it has a size */}
-              <div
-                className={`text-5xl mb-8 ${service.color} group-hover:text-white transition-colors flex items-center`}
-              >
-                {service.icon}
-              </div>
+              <div className="flex flex-col gap-4 h-auto">
+                {/* Render the icon component and ensure it has a size */}
+                <div className="flex flex-col gap-2">
+                  <div
+                    className={`text-5xl mb-8 ${service.color} group-hover:text-white transition-colors flex items-center`}
+                  >
+                    {service.icon}
+                  </div>
 
-              <h2 className="text-2xl font-light mb-4 group-hover:text-black transition-colors">
-                {service.title}
-              </h2>
+                  <h2 className="text-2xl font-light mb-4 group-hover:text-black transition-colors">
+                    {service.title}
+                  </h2>
+                </div>
 
-              <div className="flex flex-col gap-6">
-                <div className="h-[50px]">
-                  <p className="text-sm font-light mb-6 group-hover:text-gray-800 transition-colors">
+                <div className="h-[80px]">
+                  <p className="text-sm font-light line-clamp-3 mb-6 group-hover:text-gray-800 transition-colors">
                     {service.desc}
                   </p>
                 </div>
 
-                <div className="h-[50px]">
+                <div className="">
                   <a
                     href={service.link}
                     className="text-[#f59211] text-xs font-bold group-hover:text-black uppercase tracking-widest transition-colors"
