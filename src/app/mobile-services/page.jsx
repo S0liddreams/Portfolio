@@ -141,7 +141,7 @@ const MobileSolutions = () => {
             </div>
 
             <div className="bg-[#1a1a1a] p-12 rounded-[3rem] border border-gray-800 relative shadow-2xl">
-              <FaMobile className="text-gray-800 absolute -bottom-10 -right-10 text-[200px] rotate-12 opacity-20" />
+              <FaMobile className="text-gray-800 absolute -bottom-10 -right-0 text-[200px] rotate-12 opacity-20" />
               <h3 className="text-2xl font-bold mb-6">Production Ready</h3>
               <p className="text-gray-400 mb-8 italic">
                 "I don't just build apps that work on my machine. I build apps
