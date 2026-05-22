@@ -14,6 +14,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Soliddreamdevs",
   description: "Soliddreamdevs",
+  icons: {
+    icon: "/favicon.ico", // This looks in your 'public' folder
+    // You can also add more specific versions:
+  },
 };
 
 export default function RootLayout({ children }) {
